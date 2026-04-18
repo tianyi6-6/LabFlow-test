@@ -1,0 +1,1 @@
+"""Node widget for canvas"""

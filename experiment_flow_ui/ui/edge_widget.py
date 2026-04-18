@@ -1,0 +1,1 @@
+"""Edge widget for connections"""

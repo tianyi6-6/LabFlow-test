@@ -1,0 +1,40 @@
+# LabFlow 科研仪器可视化工作流系统依赖项
+
+# 核心UI框架
+PySide6==6.6.2
+
+# 数据处理
+numpy==1.26.4
+pandas==2.2.1
+
+# 科学可视化
+pyqtgraph==0.13.3
+matplotlib==3.8.4
+
+# 图论分析
+networkx==3.2.1
+
+# 串口通信
+pyserial==3.5
+
+# 异步IO
+asyncio==3.4.3
+
+# 配置管理
+pyyaml==6.0.1
+
+# 命令行工具
+click==8.1.7
+
+# 类型提示
+mypy==1.8.0
+
+# 代码格式化
+black==23.12.1
+
+# 代码检查
+flake8==6.1.0
+
+# 测试
+pytest==7.4.4
+pytest-asyncio==0.21.1
