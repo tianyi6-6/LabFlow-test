@@ -1,0 +1,69 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram name="第 1 页" id="kuYbGocT2V1NnrlYeEfh">
+    <mxGraphModel dx="1026" dy="609" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nqoGZrPDYXQccqUOhhrH-1" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="节点编辑器 UI 层&#xa;NodeGraphQt / Qt" vertex="1">
+          <mxGeometry height="78" width="192" x="472" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nqoGZrPDYXQccqUOhhrH-2" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="工作流模型层&#xa;Graph JSON / NetworkX DiGraph" vertex="1">
+          <mxGeometry height="102" width="260" x="438" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="nqoGZrPDYXQccqUOhhrH-3" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="调度执行引擎&#xa;拓扑排序 + 异步执行" vertex="1">
+          <mxGeometry height="78" width="206" x="334" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="nqoGZrPDYXQccqUOhhrH-4" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="仪器驱动层&#xa;PyVISA / pySerial / DAQmx" vertex="1">
+          <mxGeometry height="78" width="251" x="20" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="nqoGZrPDYXQccqUOhhrH-5" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="数据处理层&#xa;NumPy / SciPy / Pandas" vertex="1">
+          <mxGeometry height="78" width="231" x="321" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="nqoGZrPDYXQccqUOhhrH-6" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="流式绘图层&#xa;PyQtGraph RingBuffer" vertex="1">
+          <mxGeometry height="78" width="217" x="603" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="nqoGZrPDYXQccqUOhhrH-7" parent="1" style="whiteSpace=wrap;strokeWidth=2;" value="工作流持久化&#xa;JSON / YAML 导入导出" vertex="1">
+          <mxGeometry height="78" width="219" x="590" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="nqoGZrPDYXQccqUOhhrH-8" edge="1" parent="1" source="nqoGZrPDYXQccqUOhhrH-1" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="nqoGZrPDYXQccqUOhhrH-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nqoGZrPDYXQccqUOhhrH-9" edge="1" parent="1" source="nqoGZrPDYXQccqUOhhrH-2" style="curved=1;startArrow=none;endArrow=block;exitX=0.16;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="nqoGZrPDYXQccqUOhhrH-3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="437" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nqoGZrPDYXQccqUOhhrH-10" edge="1" parent="1" source="nqoGZrPDYXQccqUOhhrH-3" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.79;entryX=0.5;entryY=0;rounded=0;" target="nqoGZrPDYXQccqUOhhrH-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="146" y="403" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nqoGZrPDYXQccqUOhhrH-11" edge="1" parent="1" source="nqoGZrPDYXQccqUOhhrH-3" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="nqoGZrPDYXQccqUOhhrH-5" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nqoGZrPDYXQccqUOhhrH-12" edge="1" parent="1" source="nqoGZrPDYXQccqUOhhrH-3" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.81;entryX=0.5;entryY=0;rounded=0;" target="nqoGZrPDYXQccqUOhhrH-6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="711" y="403" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nqoGZrPDYXQccqUOhhrH-13" edge="1" parent="1" source="nqoGZrPDYXQccqUOhhrH-2" style="curved=1;startArrow=block;endArrow=block;exitX=0.84;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="nqoGZrPDYXQccqUOhhrH-7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="699" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
